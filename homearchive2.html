@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courgette&family=Work+Sans:wght@300&display=swap" rel="stylesheet"/>
+ <link rel="stylesheet" href="pg4.css">
+</head>
+<body>
+    <input type="radio" id="Home" name="tab" checked>
+    <input type="radio" id="Discover" name="tab">
+    <input type="radio" id="Archive" name="tab">
+
+    <label for="Home" class="tab"><img src="home.png" height="20" width="20"></label>
+    <label for="Discover" class="tab"><img src="discover.png" height="20" width="20"></label>
+    <label for="Archive" class="tab"><img src="archive.png" height="20" width="20"></label>
+
+<div id="HomeContent" class="tab-content">
+        <script>
+            // JavaScript to retrieve and use the saved username
+            const savedUsername = localStorage.getItem("username");
+    
+            if (savedUsername) {
+                document.write(`<h1>Welcome, ${savedUsername}!</h1>`);
+            } else {
+                document.write("<h1>Welcome!</h1>");
+            }
+        </script>
+
+
+     <fieldset>
+            <legend>Discover New</legend>
+
+            <div class="flex-container">
+                <div class="image">
+                    <a href="playlist page.html"><img src="desi pop.jpg" alt="Image 5" id="abc" class="desipop"></a>
+                    <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="playlist page.html">Desi-Pop Mix</a></span>
+                  </div>
+
+          <div class="image">
+           <img src="hip hop.jpg" alt="Image 1" id="abc">
+            <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hip-Hop Mix</span>
+          </div>
+
+          <div class="image">
+            <img src="rnb.jpg" alt="Image 2" id="abc">
+            <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RnB Mix</span>
+          </div>
+
+          <div class="image">
+            <img src="jazz1.jpg" alt="Image 3" id="abc">
+            <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jazz Mix</span>
+          </div>
+
+          <div class="image">
+            <img src="pop.jpg" alt="Image 4" id="abc">
+            <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pop Mix</span>
+          </div>
+          
+        </div>
+    </fieldset >
+
+
+<br><br><br>
+
+<fieldset class="albums">
+    <legend>Albums for you</legend>
+
+    <div class="flexx-cont"><div class="album">
+        <img src="mm.jpg" alt="Album 1 Image">
+    </div>
+
+    <div class="album">
+        <img src="utopia.jpg" alt="Album 1 Image">
+    </div>
+
+    <div class="album">
+        <img src="ct.jpg" alt="Album 1 Image">
+    </div>
+
+    <div class="album">
+        <img src="vc.jpg" alt="Album 2 Image">
+    </div>
+
+    <div class="album">
+        <img src="lem.jpg" alt="Album 3 Image">
+    </div>
+
+    <div class="album">
+        <img src="yjhd.jpg" alt="Album 3 Image">
+    </div>
+
+    <div class="album">
+        <img src="starboy.jpg" alt="Album 3 Image">
+    </div>
+  
+  </div>
+</fieldset>
+
+<br><br><br>
+          <fieldset>
+                <legend>You might like</legend>
+                <div class="flex-container">
+              <div class="image">
+                <img src="autumn.jpg" alt="Image 1" id="abc">
+                <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Autumn Vibes</span>
+              </div>
+              <div class="image">
+                <img src="catchy.jpg" alt="Image 2" id="abc">
+                <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Catchy Hits</span>
+              </div>
+              <div class="image">
+                <img src="alt.jpg" alt="Image 3" id="abc">
+                <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alt Mix</span>
+              </div>
+              <div class="image">
+                <img src="classical.jpg" alt="Image 4" id="abc">
+                <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Classical Hits</span>
+              </div>
+              <div class="image">
+                <img src="euphoria.jpg" alt="Image 5" id="abc">
+                <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Euphoria Feels</span>
+              </div>
+            </div>
+        </fieldset >
+
+
+
+            <br><br><br>
+
+
+
+        <fieldset>
+              <legend>Popular Now</legend>
+              <div class="flex-container">
+
+            <div class="image">
+             <img src="thank u next.jpg" alt="Image 1" id="abc">
+              <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thank u, next</span>
+            </div>
+
+            <div class="image">
+              <img src="surfer dude.jpg" alt="Image 2" id="abc">
+              <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beachy Vibes</span>
+            </div>
+
+            <div class="image">
+              <img src="carefree.jpg" alt="Image 3" id="abc">
+              <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carefree Mix</span>
+            </div>
+
+            <div class="image">
+              <img src="night drives.jpg" alt="Image 4" id="abc">
+              <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Late Night Drive Mix</span>
+            </div>
+
+            <div class="image">
+              <img src="limelight.jpg" alt="Image 5" id="abc">
+              <span id="playlists">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Streetlights Mix</span>
+            </div>
+          
+          </div>
+      </fieldset >
+
+  <br><br><br>
+</div>
+
+
+
+    <div id="DiscoverContent" class="tab-content">
+            <form id="username-form">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search..." class="search-input">
+                </div>
+                <form>
+                  <br><br><br>
+
+     <fieldset>
+       <legend>Popular Searches</legend><br>
+       <div class="player-container">
+          <img class="player-image" src="ldr.jpg" alt="Player Image">
+          <div class="player-info">
+            <div class="player-name"><a href="artist_page3.html">Lana Del Rey</a></div>
+          </div>
+          <a href="artist_page3.html"><button class="play-button">&#9654;</button></a>
+        </div>
+<br>
+
+
+
+    <div class="player-container">
+    <img class="player-image" src="ts.jpg" alt="Player Image">
+    <div class="player-info">
+      <div class="player-name">Taylor Swift</div>
+    </div>
+    <button class="play-button">&#9654;</button>
+  </div>
+  <br>
+
+
+  <div class="player-container">
+    <img class="player-image" src="Shreya Ghoshal.jpg" alt="Player Image">
+    <div class="player-info">
+      <div class="player-name">Shreya Ghoshal</div>
+    </div>
+    <button class="play-button">&#9654;</button>
+  </div>
+  <br>
+
+
+  <div class="player-container">
+    <img class="player-image" src="olivia.jpg" alt="Player Image">
+    <div class="player-info">
+      <div class="player-name"><a href="dl.html">Drivers License</a><span id="abc"> - Olivia Rodrigo</span></div>
+    </div>
+    <button class="play-button">&#9654;</button>
+  </div>
+  <br>
+  
+  <div class="player-container">
+    <img class="player-image" src="Arijit Singh.jpg" alt="Player Image">
+    <div class="player-info">
+      <div class="player-name">Arijit Singh</div>
+    </div>
+    <button class="play-button">&#9654;</button>
+  </div><br>
+
+
+  </fieldset>
+    </div>
+
+
+    <div id="ArchiveContent" class="tab-content">
+        <div class="containeradf">
+            <div class="sectionadf">
+                <h2 id="fgh">Your Podcasts</h2>
+                <div class="podcast-content">
+                    <div class="podcast">
+                        <img id="podcastimg" src="omitb.jpg" alt="Podcast 1">
+                        <p>Only Murders in the Building</p>
+                    </div>
+                    <div class="podcast">
+                        <img id="podcastimg" src="dark house.jpg" alt="Podcast 2">
+                        <p>Dark House</p>
+                  </div>
+            </div>
+        </div>
+            <div class="sectionadf">
+                <h2 id="fgh">Your Profile</h2>
+                <div class="profile-content">
+                    <img id="profile-pic"  src="anon.jpg" alt="Your Profile">
+                    <p><a href="edit12.html">EDIT PROFILE</a></p>
+                    <p>New User - Joined Recently</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="liked-songs">
+            <h2 id="fgh">Liked Songs</h2>
+            <div class="player-container">
+              <img class="player-image" src="haareya.jpg" alt="Player Image">
+              <div class="player-info">
+                <div class="player-name">Haareya</div>
+              </div>
+              <button class="play-button">&#9654;</button>
+            </div>
+            <br>
+
+            <div class="player-container">
+              <img class="player-image" src="khudajaane.jpg" alt="Player Image">
+              <div class="player-info">
+                <div class="player-name">Khuda Jaane</div>
+              </div>
+              <button class="play-button">&#9654;</button>
+            </div>
+            <br>
+
+            <div class="player-container">
+              <img class="player-image" src="jeb.jpg" alt="Player Image">
+              <div class="player-info">
+                <div class="player-name">Jashn-e-Bahara</div>
+              </div>
+              <button class="play-button">&#9654;</button>
+            </div>
+            <br>
+
+            <div class="player-container">
+              <img class="player-image" src="kkp.jpg" alt="Player Image">
+              <div class="player-info">
+                <div class="player-name">Khaabon ke Parindey</div>
+              </div>
+              <button class="play-button">&#9654;</button>
+            </div>
+            <br>
+
+            
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+       *{
+        font-family: work sans;
+        color:white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(26,26,26);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .music-player123 {
+            background: rgb(78, 78, 153);
+            border-radius: 8px;
+            width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cover-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .song-info1 {
+            margin-top: 20px;
+        }
+
+        .song-title1 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .artist-names {
+            margin-top: 5px;
+            font-size: 14px;
+            color:rgba(255, 255, 255, 0.897);
+        }
+
+        .controlsabc {
+            margin-top: 20px;
+            color:rgba(255, 255, 255, 0.897);
+        }

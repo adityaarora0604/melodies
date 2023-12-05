@@ -1,0 +1,66 @@
+body {
+      font-family: work sans, sans-serif;
+      background-image:url("pngh.png");
+      background-size:cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .container {
+      background-color:rgba(224, 94, 34, 0.568);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    
+    h2 {
+      text-align: center;
+      color:white;
+    }
+    
+    form {
+      display:flex;
+      height:270px;
+      width:300px;
+      flex-direction:column;
+    }
+    
+    input {
+      margin: 10px 0;
+    }
+    
+    input[type="text"], input[type="password"], input[type="email"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      outline: none;
+    }
+    
+    button {
+      background-color:transparent;
+      color:black;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight:bold;
+      font-family: work sans;
+    }
+    button:hover {
+            background-color:rgb(211, 79, 31);
+        }
+    input[placeholder]{
+        font-family: work sans;
+        color:rgb(211, 79, 31)}
+
+    a{
+      text-decoration: underline;
+      text-decoration-color:white;
+      color:white;
+      font-size:24px;
+    }
