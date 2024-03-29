@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courgette&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Artist Page</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:work sans;
+}
+.flexx-cont {
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      width: 100%;}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(26, 25, 25);
+    color:white;
+}
+
+.container {
+    display: flex;
+}
+
+.image-container {
+    width: 33%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-container {
+    width: 67%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.popular-songs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+}
+
+.song img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.song p {
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.like-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.albums {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.album {
+    margin-right: 20px;
+}
+
+.album img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+#abc{
+        border-radius: 10%;
+        overflow: hidden;
+      }
+
+      .player-container {
+      display: flex;
+      align-items: center;
+      width: 97.5%;
+      background-color: rgb(26, 25, 25);
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: 0.5px 0.5px 0.5px 1px white;
+    }
+
+    .player-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .player-info {
+      flex: 1;
+    }
+
+    .player-name {
+      font-weight: bold;
+      font-size: 18px;
+      color:white;
+      font-family:work sans;
+    }
+
+    .play-button {
+      background-color: rgb(211, 79, 31);
+      color: rgb(26, 25, 25);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    #abc{
+      font-family:work sans;
+      font-size:12px;
+      color:rgba(258,258,258,0.7)
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="ldr.jpg" alt="Artist Image">
+        </div>
+        <div class="info-container">
+            <h1>LANA DEL REY</h1>
+        <div class="player-container">
+                    <img class="player-image" src="ss.jpg" alt="Player Image">
+                    <div class="player-info">
+                      <div class="player-name">Summertime Sadness</div>
+                    </div>
+                    <button class="play-button">&#9654;</button>
+                  </div>
+                  <br>
+                  <div class="player-container">
+                    <img class="player-image" src="ynb.jpg" alt="Player Image">
+                    <div class="player-info">
+                      <div class="player-name">Young & Beautiful</div>
+                    </div>
+                    <button class="play-button">&#9654;</button>
+                  </div>
+                  <br>
+                  <div class="player-container">
+                    <img class="player-image" src="cola.jpg" alt="Player Image">
+                    <div class="player-info">
+                      <div class="player-name">Cola</div>
+                    </div>
+                    <button class="play-button">&#9654;</button>
+                  </div>
+
+            <fieldset class="albums">
+                <legend>Albums</legend>
+                <div class="flexx-cont"><div class="album">
+                    <img src="hm.jpg" alt="Album 1 Image">
+                </div>
+                <div class="album">
+                    <img src="nfr.jpg" alt="Album 2 Image">
+                </div>
+                <div class="album">
+                    <img src="uv.jpg" alt="Album 3 Image">
+                </div></div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

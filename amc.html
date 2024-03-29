@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courgette&family=Work+Sans:wght@300&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-like Music Player</title>
+    <style>
+        *{
+        font-family: work sans;
+        color:white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(26,26,26);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .music-player123 {
+            background: rgba(135, 207, 235, 0.507);
+            border-radius: 8px;
+            width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cover-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .song-info1 {
+            margin-top: 20px;
+        }
+
+        .song-title1 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .artist-names {
+            margin-top: 5px;
+            font-size: 14px;
+            color:rgba(255, 255, 255, 0.897);
+        }
+
+        .controlsabc {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="music-player123">
+        <img class="cover-image" src="aaon milo chalein.jpg" alt="Album Cover">
+        <div class="song-info1">
+            <div class="song-title1">Aao Milo Chalein</div>
+            <div class="artist-names">Shaan</div>
+        </div>
+        <br><br>
+            <audio controls>
+                    <source src="aaon milo chalein.mp3" type="audio/mpeg">
+                    
+            </audio>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courgette&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Edit Profile</title>
+    <style>
+        body {
+            font-family: work sans;
+            background-color:rgb(26, 25, 25);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color:white;
+        }
+
+        .profile-container {
+            background-color: rgb(26, 25, 25);
+            box-shadow: 0 0 10px rgb(26, 25, 25);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .btn {
+            border: 2px solid gray;
+            color: white;
+            background-color: rgba(26, 25, 25, 0.493);
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: work sans;
+        }
+
+        .upload-btn-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Edit Profile</h2>
+        <img class="profile-picture" src="default-profile.jpg" alt="Profile Picture">
+
+        <div class="upload-btn-wrapper">
+            <button class="btn">Upload a Profile Picture</button>
+            <input type="file" name="profile-picture" id="profile-picture" accept="image/*" onchange="displayImage(this)">
+        </div>
+
+    </div>
+
+    <script>
+        function displayImage(input) {
+            var file = input.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    document.querySelector('.profile-picture').src = e.target.result;
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>
